@@ -34,19 +34,24 @@ html{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+}
+.menu li{
+    padding-right: 10px;
 }
 .menu li a{
     display: block;
     text-decoration: none;
     padding: 10px 20px 10px;
     color: rgb(1, 1, 1);
+    transition: 0.6s;
 }
 .menu li a:hover{
     color : rgb(255, 255, 255);
     display: block;
     text-decoration: none;
     background-color: rgb(0, 0, 0);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .containerItens{
     margin: 25px;
@@ -57,6 +62,7 @@ html{
 .containerItens h2{
     color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s;
 }
 .containerItens h2:hover{
     color: rgb(49, 45, 255);
