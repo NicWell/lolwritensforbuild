@@ -1,3 +1,0 @@
-function mostrar() {
-    alert("teste");
-}
