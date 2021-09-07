@@ -24,6 +24,9 @@ html{
     border-radius: 10px;
     align-items: center;
 }
+.container a{
+    margin-right: 10px;
+}
 #imgIcon{
     max-width: 100%;
     height:45px;
@@ -141,4 +144,16 @@ h5{
 footer p{
     color:rgb(255, 255, 255);
     text-align: center;
+}
+#login{
+    padding: 10px 15px 10px;
+    text-decoration: none;
+    color: rgb(0,0,0);
+    display: block;
+}
+#login:hover{
+    padding:10px 15px 10px;
+    border-radius:10px;
+    box-shadow: 1px 2px 20px;
+    color: rgb(0, 255, 13);
 }
