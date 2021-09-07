@@ -1,0 +1,3 @@
+function sh() {
+    alert("teste");
+}
