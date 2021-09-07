@@ -19,9 +19,23 @@
 </head>
 
 <body>
+    <script src="js/index.js"></script>
     <header>
         <h2>LOGIN</h2>
     </header>
+    <section>
+        <form autocomplete="on" name="loginForm">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required />
+            <br><br>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha" placeholder="1234" />
+            <input type="button" id="btnsenha" name="btnsenha" onclick="mostrar()" value="Mostrar Senha">
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="usuário@email.com" />
+        </form>
+    </section>
 </body>
 
 </html>

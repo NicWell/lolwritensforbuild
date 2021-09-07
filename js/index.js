@@ -1,1 +1,3 @@
-console.log("teste");
+function mostrar() {
+    alert("teste");
+}
