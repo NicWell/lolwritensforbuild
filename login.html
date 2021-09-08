@@ -29,7 +29,8 @@
             <input type="text" name="nome" id="nome" placeholder="Digite seu nome" />
             <br><br>
             <label for="senha">SENHA:</label>
-            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required />
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="4" maxlength="8"
+                pattern="(?=.*\d).{4,8}" required />
             <input type="checkbox" name="checkbox" id="checkbox" onclick="sh()" />
             <label for="checkbox">Mostrar senha</label>
             <br><br>
