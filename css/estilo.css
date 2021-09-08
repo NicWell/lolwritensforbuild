@@ -28,7 +28,7 @@ html{
 .container a{
     margin-right: 10px;
 }
-#imgIcon{ 
+#imgIcon{
     padding: 5px 5px;
     max-width: 100%;
     height:45px;
@@ -166,4 +166,5 @@ footer p{
 }
 .contato {
     display: flex;
+    flex-wrap: wrap;
 }
