@@ -7,15 +7,15 @@ function sh() {
     }
 }
 function sh2() {
-    let statusSenha = formLogin.UserSenha;
+    let statusSenha = formLogin.userSenha;
     if (statusSenha.type === "password") {
         statusSenha.type = "text";
     } else {
         statusSenha.type = "password";
     }
 }
-var senhaFinal = "Well";
-var usuarioFinal = "1234";
+var senhaFinal = "102010";
+var usuarioFinal = "well";
 function cadastro() {
     let nome = String(formCad.nome.value);
     let password = document.getElementById("senha").value;
@@ -45,12 +45,19 @@ function cadastro() {
     }
 }
 function logar() {
-    alert(senhaFinal);
-    alert(usuarioFinal);
-    let senhaAtual = document.getElementById("senha").value;
-    if (senhaFinal != senhaAtual) {
-        alert("Digite a senha que você cadastrou anteriormente!!");
+    let senhaAtual = document.getElementById("userSenha").value;
+    let usuarioLogin = String(document.getElementById("user").value);
+    if (usuarioLogin === "") {
+        document.getElementById("user").focus();
+    } else if (senhaAtual === "") {
+        document.getElementById("userSenha").focus();
     } else {
-
+        if (usuarioLogin != usuarioFinal || senhaAtual != senhaFinal) {
+            alert("Usuário ou senha incorretos");
+        }
+        if (usuarioLogin == usuarioFinal && senhaAtual == senhaFinal) {
+            alert("login realizado!!");
+            window.open('https://wellingtonnicacio444.github.io/lolwritensforbuild/index.html', '_self');
+        }
     }
 }
