@@ -1,15 +1,23 @@
 function sh() {
-    let statusSenha = formLogin.senha;
+    let statusSenha = formCad.senha;
     if (statusSenha.type === "password") {
         statusSenha.type = "text";
     } else {
         statusSenha.type = "password";
     }
 }
-var senhaFinal;
-var usuarioFinal;
+function sh2() {
+    let statusSenha = formLogin.UserSenha;
+    if (statusSenha.type === "password") {
+        statusSenha.type = "text";
+    } else {
+        statusSenha.type = "password";
+    }
+}
+var senhaFinal = "Well";
+var usuarioFinal = "1234";
 function cadastro() {
-    let nome = String(formLogin.nome.value);
+    let nome = String(formCad.nome.value);
     let password = document.getElementById("senha").value;
     let email = document.getElementById("email").value;
     let convert = password.split("");
@@ -25,11 +33,11 @@ function cadastro() {
         } else {
             let regex = /\S+@\S+\.\S+/;
             if (regex.test(email)) {
+                this.senhaFinal = String(password);
+                this.usuarioFinal = nome;
                 alert("Cadastro Aprovado!!");
                 // document.getElementById("loginFinal").innerText = "teste";
-                senhaFinal = password;
-                usuarioFinal = nome;
-                window.open('http://www.google.com.br', '_self');
+                window.open('https://wellingtonnicacio444.github.io/lolwritensforbuild/index.html', '_self');
             } else {
                 alert("Preencha o email corretamente!!");
             }
