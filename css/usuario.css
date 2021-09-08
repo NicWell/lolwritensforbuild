@@ -63,14 +63,14 @@ section form button{
     border-radius: 4px;
 }
 #reset{
-    margin-left: 12px;
+    margin-left: 84px;
     transition: 0.3s;
 }
 #reset:hover{
     background-color:rgb(255, 23, 23);
     border-radius: 4px;
 }
-.login{
+.login{ 
     padding: 10px 15px 10px;
     margin: 10px;
     text-decoration: none;
